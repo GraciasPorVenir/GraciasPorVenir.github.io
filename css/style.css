@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "JetBrains";
+  src: url("../fonts/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains", monospace;
+}
+
+:root{
+  --red: #B9162A;
+  --black: #000000;
+  --white: #DCDCDC;
+}
+
+@media (min-width: 1366px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100dvh;
+  }
+
+  header nav {
+    padding: 1.5dvh .5dvw;
+    margin: 1.5dvh .5dvw;
+    border-radius: 5px;
+    background-color: var(--black);
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5dvh;
+    list-style: none;
+  }
+
+  header nav ul li a, header nav ul li input {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  header nav ul li input{
+    background-color: transparent;
+    border: none;
+  }
+  main {
+    width: 100dvw;
+    height: 100dvh;
+  }
+  main section {
+    background-color: #00000050;
+    border: 2px solid #000000;
+    margin: 2dvh 1dvw;
+    padding: 2dvh 1dvw;
+    border-radius: 5px;
+    margin-left: 3.5dvw;
+  }
+
+  #welcome-section{
+    height: 100%;
+  }
+  
+  footer {
+    margin-top: 1dvh;
+    left: 0;
+    bottom: 0;
+    background-color: var(--black);
+  }
+}
+

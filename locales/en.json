@@ -1,7 +1,13 @@
 {
-  "main": {
-    "welcome": {
-      "title": "I'm GraciasPorVenir"
-    }
-  }
+  "welcome": {
+    "title": "Hello! and Gracias por Venir",
+    "subtitle": "Nothing but the best."
+  },
+  "about-me": {
+    "title": "About me",
+    "content": "Blahblahblah..."
+  },
+  "tech-stack-title": "Tech stack",
+  "projects-title": "Projects",
+  "footer-contacts": "Contacts"
 }

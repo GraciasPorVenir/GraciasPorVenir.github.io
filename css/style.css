@@ -48,30 +48,31 @@ html {
     list-style: none;
   }
 
-  header nav ul li a, header nav ul li input {
+  header nav ul li a, #btnLang, footer section h3 {
     font-size: 1rem;
     text-decoration: none;
     color: var(--white);
   }
 
-  header nav ul li input{
+  #btnLang{
     background-color: transparent;
     border: none;
   }
+
   main {
     width: 100dvw;
     height: 100dvh;
   }
   main section {
     background-color: #00000050;
-    border: 2px solid #000000;
+    border: 5px solid var(--black);
     margin: 2dvh 1dvw;
     padding: 2dvh 1dvw;
     border-radius: 5px;
     margin-left: 3.5dvw;
   }
 
-  #welcome-section{
+  #welcome{
     height: 100%;
   }
   
@@ -80,6 +81,8 @@ html {
     left: 0;
     bottom: 0;
     background-color: var(--black);
+    color: var(--white);
+    padding: 1dvw 1dvw;
   }
 }
 

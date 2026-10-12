@@ -12,5 +12,7 @@ function checkObject(prefix = "", object) {
 
 function changeLanguage(language = "en") {
   $.getJSON(`./locales/${language}.json`, (data) => checkObject("", data))
-    .fail(() => console.error("Error loading language."));
+    .fail((err) => {
+      console.error(err)
+    });
 }

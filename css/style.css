@@ -14,13 +14,17 @@ html {
   font-family: "JetBrains", monospace;
 }
 
-:root{
+:root {
   --red: #B9162A;
   --black: #000000;
   --white: #DCDCDC;
 }
 
 @media (min-width: 1366px) {
+  body {
+    /* background-color: var(--black); */
+  }
+
   header {
     display: flex;
     align-items: center;
@@ -37,6 +41,7 @@ html {
     margin: 1.5dvh .5dvw;
     border-radius: 5px;
     background-color: var(--black);
+    border: 1px solid rgba(220, 220, 220, 0.1);
   }
 
   header nav ul {
@@ -48,41 +53,56 @@ html {
     list-style: none;
   }
 
-  header nav ul li a, #btnLang, footer section h3 {
+  #btnLang, footer section h3 {
     font-size: 1rem;
     text-decoration: none;
     color: var(--white);
+    cursor: pointer;
   }
 
-  #btnLang{
+  #btnLang {
     background-color: transparent;
     border: none;
   }
 
   main {
-    width: 100dvw;
-    height: 100dvh;
-  }
-  main section {
-    background-color: #00000050;
-    border: 5px solid var(--black);
-    margin: 2dvh 1dvw;
+    width: calc(100dvw - 3dvw); 
+    margin-left: 3dvw; /* Deja espacio para el menú lateral fijo */
     padding: 2dvh 1dvw;
-    border-radius: 5px;
-    margin-left: 3.5dvw;
   }
 
-  #welcome{
-    height: 100%;
+  main section {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--white);
+    margin-bottom: 2dvh;
+    padding: 3dvh 2dvw;
+    border-radius: 5px;
+    min-height: calc(100dvh - 6dvh); 
+  }
+
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   footer {
-    margin-top: 1dvh;
-    left: 0;
-    bottom: 0;
     background-color: var(--black);
     color: var(--white);
-    padding: 1dvw 1dvw;
+    padding: 2dvw;
+    border-top: 1px solid rgba(220, 220, 220, 0.1);
+  }
+  footer section ul {
+    display: flex;
+    gap: 1.5dvw;
+    list-style: none;
+  }
+
+  .icon-link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
   }
 }
-

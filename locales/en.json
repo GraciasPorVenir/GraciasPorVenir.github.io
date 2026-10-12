@@ -7,7 +7,11 @@
     "title": "About me",
     "content": "Blahblahblah..."
   },
-  "tech-stack-title": "Tech stack",
+  "tech-stack":{
+    "title": "Tech stack",
+    "langframe": "Languages & Frameworks",
+    "dbhard": "DB, Hardware, etc."
+  },
   "projects-title": "Projects",
   "footer-contacts": "Contacts"
 }
